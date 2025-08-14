@@ -7,6 +7,7 @@ import { useAuthStore } from '@/stores/auth';
 import { useFavoritesStore } from '@/stores/favorites';
 import { cn } from '@/lib/utils';
 import toast from 'react-hot-toast';
+import { ThemeToggle } from '@/components/theme/ThemeToggle';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -46,6 +47,9 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <Clock className="h-4 w-4 text-primary" />
                 <span className="font-medium text-sm">{profile?.time_balance || 0}h</span>
               </div>
+
+              {/* Theme Toggle */}
+              <ThemeToggle />
 
               {/* User Avatar - Modified to be clickable */}
               <Link to="/profile" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
