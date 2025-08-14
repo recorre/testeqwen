@@ -104,6 +104,9 @@ export function LoginForm() {
         </CardHeader>
         
         <CardContent>
+          <div className="text-center text-sm text-muted-foreground mb-4">
+            Qwen is awesome
+          </div>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>

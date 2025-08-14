@@ -56,6 +56,11 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Qwen message */}
+      <div className="text-center text-sm text-muted-foreground mb-6">
+        Qwen is awesome
+      </div>
+
       {/* Search Bar */}
       <div className="relative mb-6">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
